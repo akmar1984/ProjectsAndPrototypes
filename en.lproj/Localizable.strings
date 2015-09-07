@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  LittleBell
+
+  Created by Marek Tomaszewski on 18/05/2015.
+  Copyright (c) 2015 CS193p. All rights reserved.
+*/
+
+"Cancel" = "Cancel";
+"ExitToMainMenu" = "ExitToMainMenu";
+"Paused" = "Paused";
+"Pick one of the options" = "Pick one of the options";
+"Play Again?" = "Play Again?";

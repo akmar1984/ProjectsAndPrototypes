@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="G37-ej-O76">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController storyboardIdentifier="GameViewController" id="BV1-FR-VrT" customClass="GameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="maK-i9-Uhn"/>
+                        <viewControllerLayoutGuide type="bottom" id="khH-OB-KpY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaM-lK-rAY">
+                                <rect key="frame" x="16" y="28" width="53" height="53"/>
+                                <state key="normal" backgroundImage="exitB.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="exitButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="n1O-FQ-xKe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="exitButton" destination="MaM-lK-rAY" id="BCb-ga-8jr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1354" y="1221"/>
+        </scene>
+        <!--Main Menu View Controller-->
+        <scene sceneID="yGr-7i-iuu">
+            <objects>
+                <viewController storyboardIdentifier="MainMenuViewController" id="Xbl-81-aDr" customClass="MainMenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MG9-Fi-F4i"/>
+                        <viewControllerLayoutGuide type="bottom" id="sxk-kZ-FOj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mVa-9o-EcS">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsj-V2-Q9u">
+                                <rect key="frame" x="713" y="370" width="132" height="124"/>
+                                <state key="normal" image="buttonPlayWhite.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hitPlay:" destination="Xbl-81-aDr" eventType="touchUpInside" id="Lhw-AY-uAK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmh-E2-U30">
+                                <rect key="frame" x="715" y="538" width="128" height="127"/>
+                                <state key="normal" image="buttonLSelect.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="levelSelectButton:" destination="Xbl-81-aDr" eventType="touchUpInside" id="Ahv-Bu-gvh"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LittleBellLabel.png" translatesAutoresizingMaskIntoConstraints="NO" id="tOO-el-Byf">
+                                <rect key="frame" x="199" y="89" width="646" height="228"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menuBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="xh3-L0-kee">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zmt-oW-pzG">
+                                <rect key="frame" x="707" y="406" width="187" height="124"/>
+                                <state key="normal" image="buttonPlayJPN.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hitPlay:" destination="Xbl-81-aDr" eventType="touchUpInside" id="uBz-x2-hdG"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MainTitleWhite.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tvg-Hq-zaT">
+                                <rect key="frame" x="242" y="96" width="535" height="179"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GcQ-A5-BqT">
+                                <rect key="frame" x="734" y="557" width="132" height="124"/>
+                                <state key="normal" image="levelSelectButtonJPN.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="levelSelectButton:" destination="Xbl-81-aDr" eventType="touchUpInside" id="NFr-h6-E2F"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="jsj-V2-Q9u"/>
+                                <exclude reference="Mmh-E2-U30"/>
+                                <exclude reference="tOO-el-Byf"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="HHB-7w-JmB"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="levelSelectButton" destination="GcQ-A5-BqT" id="fp7-kb-10e"/>
+                        <outlet property="playButton" destination="Zmt-oW-pzG" id="4V1-Np-zed"/>
+                        <outlet property="titleLabel" destination="Tvg-Hq-zaT" id="WGP-Wv-ZRM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FWp-E3-rrk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2819" y="745"/>
+        </scene>
+        <!--Level Select View Controller-->
+        <scene sceneID="9VS-kh-uDD">
+            <objects>
+                <viewController storyboardIdentifier="LevelSelectViewController" extendedLayoutIncludesOpaqueBars="YES" id="Jq8-Da-gfe" customClass="LevelSelectViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JP5-3C-mEU"/>
+                        <viewControllerLayoutGuide type="bottom" id="gWj-hf-GOW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="29Q-Vs-snf">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNU-YM-lhL">
+                                <rect key="frame" x="61" y="624" width="132" height="124"/>
+                                <state key="normal" image="backButton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menuBackgroundSepia.png" translatesAutoresizingMaskIntoConstraints="NO" id="F1G-wW-TDI">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ij-I5-avh">
+                                <rect key="frame" x="61" y="624" width="89" height="86"/>
+                                <state key="normal" image="backButtonJPN.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton:" destination="Jq8-Da-gfe" eventType="touchUpInside" id="lcz-Uv-iT5"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltH-G8-Fes">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="616"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="scrollView" destination="ltH-G8-Fes" id="xNy-zz-jK3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jxa-Q0-row" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3916" y="1237"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9aT-a4-Dqc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="G37-ej-O76" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="26p-RE-Fie">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xbl-81-aDr" kind="relationship" relationship="rootViewController" id="acK-9S-xs7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xpe-lD-HtE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1288" y="350"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LittleBellLabel.png" width="1023" height="800"/>
+        <image name="MainTitleWhite.png" width="560" height="121"/>
+        <image name="backButton.png" width="132" height="124"/>
+        <image name="backButtonJPN.png" width="132" height="124"/>
+        <image name="buttonLSelect.png" width="132" height="124"/>
+        <image name="buttonPlayJPN.png" width="132" height="124"/>
+        <image name="buttonPlayWhite.png" width="132" height="124"/>
+        <image name="exitB.png" width="89" height="86"/>
+        <image name="levelSelectButtonJPN.png" width="132" height="124"/>
+        <image name="menuBackground.png" width="1024" height="768"/>
+        <image name="menuBackgroundSepia.png" width="1024" height="768"/>
+    </resources>
+</document>

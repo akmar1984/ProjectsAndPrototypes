@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  LittleBell
+
+  Created by Marek Tomaszewski on 18/05/2015.
+  Copyright (c) 2015 CS193p. All rights reserved.
+*/
+"Cancel" = "キャンセル";
+"ExitToMainMenu" = "メインメニューへの出口";
+"Paused" = "一時停止";
+"Pick one of the options" = "のいずれかのオプションを選択してください";
+"Play Again?" = "遊ぶ?";
